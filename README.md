@@ -14,11 +14,11 @@
 + Implemented and customized DataMaps features (coloring, popups, etc.)
 + Structured initial AngularJS components
 
-### Keith
+### Keith Moore
 + Designed JSON 'database' to incorporate data on country names, country codes, languages, population, and GDP
 + Used query builder to gather 'seed' JSON data from World Bank API
 + Added comments to JS scripts
-+ Collaborated with team members to write filter-controller functions and debug JS scripts
++ Collaborated with team members to write and debug JS scripts
 
 ### Patrick
 + Helped create Language Data
