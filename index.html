@@ -2,52 +2,80 @@
 <html ng-app="interactiveMap">
 <head>
 	<title>Interactive Map</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 	<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
 	<script type="text/javascript" src="js/datamaps.js"></script>
-    <script type="text/javascript" src="js/map.module.js"></script>
-    <script type="text/javascript" src="js/filterController.js"></script>
-    <script type="text/javascript" src="js/mapsController.js"></script>
-    <script type="text/javascript" src="js/homeMapController.js"></script>
-    <script type="text/javascript" src="js/myPOPquery1.js"></script>
-    <script type="text/javascript" src="js/myGDPquery1.js"></script>
-    <script type="text/javascript" src="js/myPOPquery2.js"></script>
-    <script type="text/javascript" src="js/myGDPquery2.js"></script>
-    <script type="text/javascript" src="js/myPOPquery3.js"></script>
-    <script type="text/javascript" src="js/myGDPquery3.js"></script>
-    <script type="text/javascript" src="js/myPOPquery4.js"></script>
-    <script type="text/javascript" src="js/myGDPquery4.js"></script>
-    <script type="text/javascript" src="js/myPOPquery5.js"></script>
-    <script type="text/javascript" src="js/myGDPquery5.js"></script>
-    <script type="text/javascript" src="js/languages.js"></script>
-    <script type="text/javascript" src="js/popRanges.js"></script>
-    <script type="text/javascript" src="js/gdpRanges.js"></script>
-    <script type="text/javascript" src="js/seeder.js"></script>
+	<script type="text/javascript" src="js/map.module.js"></script>
+	<script type="text/javascript" src="js/filterController.js"></script>
+	<script type="text/javascript" src="js/mapsController.js"></script>
+	<script type="text/javascript" src="js/homeMapController.js"></script>
+	<script type="text/javascript" src="js/myPOPquery1.js"></script>
+	<script type="text/javascript" src="js/myGDPquery1.js"></script>
+	<script type="text/javascript" src="js/myPOPquery2.js"></script>
+	<script type="text/javascript" src="js/myGDPquery2.js"></script>
+	<script type="text/javascript" src="js/myPOPquery3.js"></script>
+	<script type="text/javascript" src="js/myGDPquery3.js"></script>
+	<script type="text/javascript" src="js/myPOPquery4.js"></script>
+	<script type="text/javascript" src="js/myGDPquery4.js"></script>
+	<script type="text/javascript" src="js/myPOPquery5.js"></script>
+	<script type="text/javascript" src="js/myGDPquery5.js"></script>
+	<script type="text/javascript" src="js/languages.js"></script>
+	<script type="text/javascript" src="js/popRanges.js"></script>
+	<script type="text/javascript" src="js/gdpRanges.js"></script>
+	<script type="text/javascript" src="js/seeder.js"></script>
 </head>
 <body>
 
-<div id="search-panel" ng-controller="filterController">
-    <select id="language-option" ng-change="doFilter('one')" ng-model="selectedLanguage" ng-options="language for language in languages">
-        <option value="">Choose a language</option>
-    </select>
-    <select id="population-option" ng-change="doFilter('two')" ng-model="selectedPopulation" ng-options="myPop.label for myPop in popRanges">
-        <option value="">Choose a population size</option>
-    </select>
-    <select id="gdp-option" ng-change="doFilter('three')" ng-model="selectedGDP" ng-options="gdp.label for gdp in gdpRanges">
-        <option value="">Choose a GDP amount</option>
-    </select>
-    <div id="reset-map-div">
-        <button ng-click="resetMap()">Reset Map</button>
-    </div> 
+<div class="panel" ng-controller="filterController">
+
+	<div class="row">
+		<div class="input-field col s12">
+			<select id="language-option" ng-change="doFilter('one')" ng-model="selectedLanguage" ng-options="language for language in languages">
+				<option value="">Choose a language</option>
+			</select>
+			<label>Language</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="input-field col s12">
+			<select id="population-option" ng-change="doFilter('two')" ng-model="selectedPopulation" ng-options="myPop.label for myPop in popRanges">
+				<option value="">Choose a population size</option>
+			</select>
+			<label>Population Size</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="input-field col s12">
+			<select id="gdp-option" ng-change="doFilter('three')" ng-model="selectedGDP" ng-options="gdp.label for gdp in gdpRanges">
+				<option value="">Choose a GDP amount</option>
+			</select>
+			 <label>GDP</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col s12">
+			<button class="waves-effect waves-teal btn-flat" ng-click="resetMap()">Reset Map</button>
+		</div> 
+	</div>
 </div>
+
 <div id="search-result">
-    <h4>Your search returned 0 results.</h4>
+	<h4>Your search returned 0 results.</h4>
 </div>
 
 <div ng-view></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
 </body>
 </html>

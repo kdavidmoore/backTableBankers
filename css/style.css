@@ -1,15 +1,15 @@
 @media screen and (max-width: 1100px) {
-    #map{
-      margin-top: 100px;
-    }
+  #map{
+    margin-top: 100px;
+  }
 }
 
-body{
-  background: url("/images/ocean.jpg") no-repeat center center fixed; 
+body {
+  background: url("../images/ocean.jpg") no-repeat center center fixed; 
   background-size: cover;
 }
 
-button {
+/*button {
   background-color: #4099ff;
   color: white;
   border: none;
@@ -18,25 +18,29 @@ button {
   padding: 3px 8px;
   outline: none;
   cursor: pointer;
+}*/
+
+.panel {
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  width: 20vw;
+  height: 100vh;
+  box-shadow: 1px 0px 5px 1px;
+  z-index: 1;
 }
 
-#search-panel{
-    background-color: #fff;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    box-sizing: border-box;
-    padding: 10px;
-    float: left;
-    width: 182px;
-    height: 100px;
-    box-shadow: 1px 0px 5px 1px;
-    z-index: 1;
-}
-
-#search-result{
+#search-result {
   position: absolute;
   top: 2px;
   left: 200px;
   display: none;
+}
+
+#map {
+  width: 80vw;
 }
