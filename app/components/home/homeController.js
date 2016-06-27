@@ -1,4 +1,4 @@
-interactiveMap.controller('homeMapController', function($scope, $http, $routeParams, $location){
+app.controller('homeController', function($scope, $http, $routeParams, $location){
 
 	$scope.map = new Datamap({
 		element: document.getElementById('map'),

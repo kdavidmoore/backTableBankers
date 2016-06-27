@@ -1,5 +1,5 @@
 // the filter controller loads on page load
-interactiveMap.controller('filterController', function($scope, $http, $routeParams, $location){
+app.controller('filterController', function($scope, $http, $routeParams, $location){
 	$scope.languages = languages;
 	$scope.countries = countries;
 	$scope.popRanges = popRanges;
@@ -100,5 +100,5 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
         $scope.selectedPopulation = '';
         $scope.selectedGDP = '';
        	document.getElementById('search-result').style.display = "none";
-	};
+	}
 });

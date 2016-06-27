@@ -1,10 +1,8 @@
 # Interactive Map App
-
-#### Interactive map using HTML, CSS, JavaScript, AngularJS, and DataMaps (http://datamaps.github.io/)
+Interactive map using HTML, CSS, JavaScript, AngularJS, and [DataMaps](http://datamaps.github.io/)
 
 ## Summary
-
-#### Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
+Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
 
 ## Team members and contributions
 
@@ -15,51 +13,48 @@
 + Structured initial AngularJS components
 
 ### Keith Moore
-+ Designed JSON 'database' to incorporate data on country names, country codes, languages, population, and GDP
-+ Used query builder to gather 'seed' JSON data from World Bank API
++ Designed constructors and JSON objects to incorporate data on country names, country codes, languages, population, and GDP
++ Used query builder to gather JSON data from World Bank API
 + Added comments to JS scripts
 + Collaborated with team members to write and debug JS scripts
 
-### Patrick
+### Patrick Murphy
 + Helped create Language Data
 + Created function to preserve dropdown slection when the location is changed
 + Helped modify function to update scope with button changes
 + Identified a few bugs and helped find solutions
 
-### Tristan
+### Tristan Lobaugh
 + Helped create the Language Data and created function to sort the object
 + Created function to combine the data objects based on what data the user wants to see
 + Added function to see if the user has selected a query that return an empty object
 + Helped fix bugs and find solutions to problem in the routing and AngularJS components
 
 ## Demo
-
 [Live Demo](http://students.digitalcrafts.com/backTableBankers)
 
 ## Screenshots
-
-###Home page:
+### Home page:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/home.png)
 
-###Language search:
+### Language search:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang.png)
 
-###Language and population search:
+### Language and population search:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang-pop.png)
 
-###Language, population, and GDP search:
+### Language, population, and GDP search:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang-pop-gdp.png)
 
-###Custom popup data:
+### Custom popup data:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/popup1.png)
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/popup2.png)
 
-###Responsive design:
+### Responsive design:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/responsive1.png)
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/responsive2.png)
 
-##Code examples
-
+##Code Samples
 ### HTML for search box:
 ```html
 <div id="search-panel" ng-controller="filterController">
@@ -117,9 +112,7 @@ function drawLanguage(){
 };
 ```
 
-##TO DO
-
+## TODO
 + Add remaining countries
 + Add languages
 + Add additional filters
-

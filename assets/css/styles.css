@@ -3,12 +3,10 @@
       margin-top: 100px;
     }
 }
-
-body{
+body {
   background: url("../images/ocean.jpg") no-repeat center center fixed; 
   background-size: cover;
 }
-
 button {
   background-color: #4099ff;
   color: white;
@@ -19,8 +17,7 @@ button {
   outline: none;
   cursor: pointer;
 }
-
-#search-panel{
+#search-panel {
     background-color: #fff;
     position: absolute;
     top: 10px;
@@ -33,8 +30,7 @@ button {
     box-shadow: 1px 0px 5px 1px;
     z-index: 1;
 }
-
-#search-result{
+#search-result {
   position: absolute;
   top: 2px;
   left: 200px;
