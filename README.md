@@ -4,6 +4,9 @@ Interactive map using HTML, CSS, JavaScript, AngularJS, and [DataMaps](http://da
 ## Summary
 Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
 
+## Demo
+[Live Demo](http://kdavidmoore.com/languages)
+
 ## Team members and contributions
 
 ### Jonathan Melin
@@ -29,9 +32,6 @@ Single page Angular app that allows user to filter search based on language, pop
 + Created function to combine the data objects based on what data the user wants to see
 + Added function to see if the user has selected a query that return an empty object
 + Helped fix bugs and find solutions to problem in the routing and AngularJS components
-
-## Demo
-[Live Demo](http://students.digitalcrafts.com/backTableBankers)
 
 ## Screenshots
 ### Home page:
