@@ -1,5 +1,5 @@
 # Interactive Map App
-Interactive map using HTML, CSS, JavaScript, AngularJS, and [DataMaps](http://datamaps.github.io/)
+Interactive map built using HTML, CSS, JavaScript, AngularJS, and [DataMaps](http://datamaps.github.io/)
 
 ## Summary
 Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
@@ -16,7 +16,7 @@ Single page Angular app that allows user to filter search based on language, pop
 + Structured initial AngularJS components
 
 ### Keith Moore
-+ Designed constructors and JSON objects to incorporate data on country names, country codes, languages, population, and GDP
++ Designed JavaScript objects to incorporate data on country names, country codes, languages, population, and GDP
 + Used query builder to gather JSON data from World Bank API
 + Added comments to JS scripts
 + Collaborated with team members to write and debug JS scripts
